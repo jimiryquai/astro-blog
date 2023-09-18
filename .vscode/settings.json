@@ -1,9 +1,2 @@
 {
-  "frontMatter.content.publicFolder": "public",
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "posts",
-      "path": "[[workspace]]/src/content/posts"
-    }
-  ]
 }
