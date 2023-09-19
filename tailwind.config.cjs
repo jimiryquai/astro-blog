@@ -7,6 +7,9 @@ module.exports = {
 		extend: {
       fontFamily: { 
         'sans': ['Inter', ...defaultTheme.fontFamily.sans],
+        aspectRatio: {
+          thumbnail: '1.5',
+        }
       },
     },
   },

@@ -1,6 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Main from '../../components/Main.astro';
+import H1 from '../../components/H1.astro';
 
 export const getStaticPaths = async () => {
   const posts = await getCollection('posts');
@@ -23,4 +26,9 @@ type Props = {
 const { post } = Astro.props;
 ---
 
-{ post.data.title }
+<Layout title={post.data.title}>
+  <Main>
+    <a href="/blog" class="text-zinc-500 text-2xl mb-16 underline block"> &larr;  Back to all posts</a>
+    <H1 text={post.data.title} />
+  </Main>
+  </Layout>
