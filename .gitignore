@@ -4,6 +4,9 @@ dist/
 # generated types
 .astro/
 
+# generated types
+.frontmatter/
+
 # dependencies
 node_modules/
 
