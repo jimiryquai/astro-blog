@@ -1,0 +1,30 @@
+---
+import type { GetStaticPathsOptions, Page } from "astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+import H1 from "../../components/H1.astro";
+import Main from "../../components/Main.astro";
+import PostsList from "../../components/PostsList.astro";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const allPosts = await getCollection("posts");
+  return paginate(allPosts, { pageSize: 6 });
+}
+
+type Props = {
+  page: Page;
+};
+
+const { page } = Astro.props;
+const posts = page.data as CollectionEntry<"posts">[];
+---
+
+<Layout title="Blog - Astro Course">
+  <Main>
+    <H1 text="Blog" />
+    <p class="text-zinc-900 text-2xl mb-24 max-sm:mb-14">
+      Join the community and learn from Music Producers and Enthusiasts
+    </p>
+    <PostsList posts={posts} />
+  </Main>
+</Layout>
