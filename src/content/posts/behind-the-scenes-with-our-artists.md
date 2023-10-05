@@ -3,7 +3,7 @@ author: James Ryan
 categories: ["studio tips", "Jerk"]
 date: 08-10-2021
 featured: false
-image: /images/photoshoot.jpg
+image: /src/images/photoshoot.jpg
 title: Behind the scenes with our artists
 description: ea Lorem voluptate sunt irure anim id veniam commodo aute elit sint
 ---

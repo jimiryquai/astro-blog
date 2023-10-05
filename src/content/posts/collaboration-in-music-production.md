@@ -3,7 +3,7 @@ author: michael-scott
 categories: ["studio tips"]
 date: 08-10-2021
 featured: false
-image: /images/band.jpg
+image: /src/images/band.jpg
 title: Collaboration in music production
 description: ea Lorem voluptate sunt irure anim id veniam commodo aute elit sint
 ---
