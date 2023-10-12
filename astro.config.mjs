@@ -8,5 +8,5 @@ export default defineConfig({
     port: 3000
   },
   integrations: [tailwind()],
-  site: 'https://rhythm.nation'
+  site: 'https://astro-blog-5whi5he0z-jimiryquai.vercel.app/'
 });
